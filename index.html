@@ -137,29 +137,17 @@
             <div id="tournamentsContainer" class="tournaments-container"></div>
         </section>
 
-        <section id="liveVideoStream" class="matches-section">
+<section id="liveVideoStream" class="matches-section">
             <h2>📺 Watch Live Cricket</h2>
             <div style="margin-bottom:15px;text-align:center;color:#aaa;">
-                <p>Click button to load stream on this page</p>
+                <p>Click button below to watch live cricket</p>
             </div>
             <div class="stream-links">
-                <button onclick="loadCrickHD()" style="background:#ff4757;color:#fff;padding:15px 30px;border-radius:25px;border:none;font-size:1rem;cursor:pointer;">
+                <button onclick="window.location.href='https://app.crichd.com/'" style="background:#ff4757;color:#fff;padding:15px 30px;border-radius:25px;border:none;font-size:1rem;cursor:pointer;">
                     ▶ Watch Live Cricket HD
                 </button>
             </div>
-            <div id="playerWrapper" style="margin-top:20px;height:550px;background:#000;border-radius:10px;overflow:hidden;display:none;">
-                <iframe id="crickHDFrame" width="100%" height="100%" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
-            </div>
         </section>
-
-        <script>
-        function loadCrickHD() {
-            const wrapper = document.getElementById('playerWrapper');
-            const frame = document.getElementById('crickHDFrame');
-            wrapper.style.display = 'block';
-            frame.src = 'https://app.crichd.com/';
-        }
-        </script>
     </main>
 
     <script src="script.js"></script>
