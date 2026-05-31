@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://pc-softwares-hub.github.io/cricket/sitemap.xml
+
+User-agent: Googlebot
+Crawl-delay: 1
